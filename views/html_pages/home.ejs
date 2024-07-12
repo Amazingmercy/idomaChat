@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idoma chatbot</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <style>
+    #chatArea {
+      width: 100%;
+      min-height: 70vh;
+      border: 2px solid rgb(29, 97, 136);
+      overflow-y: auto;
+    }
+    .container{
+      margin-bottom: 20px;
+      margin-left: 21%;
+      margin-right: 21%;
+    }
+
+    a {
+      display: inline;
+    }
+    footer {
+            background-color: rgb(29, 97, 136);
+            color: white;
+            text-align: center;
+            padding: 1%;
+        }
+        a{
+          padding: 5%;
+        }
+  </style>
+</head>
+
+<body>
+  <nav style="background-color: rgb(29, 97, 136); padding: 5px; font-weight: bold; display: block; text-align: center;">
+    <a href="./about" style="text-decoration: none;color: white;">About Idoma Culture</a>
+    <a href="./guidelines" style="text-decoration: none;color: white;">Guildelines</a>
+  </nav>
+
+  <div class="container">
+
+    <header class="row" style="display: flex; margin: 10px;">
+      <figure><img src="./images/icon.jpg" alt="chatbot" /></figure>
+      <figcaption style="margin-top: 50px;
+        font-weight: bolder;
+        color: rgb(29, 97, 136);">IdomaChatbot</figcaption>
+    </header>
+
+    <main class="row">
+      <section class="col-xs-8">
+        <div id="chatArea"></div>
+        <div class="input-group">
+          <input id="textbox" class="form-control" type="text"
+            style="border: 2px solid rgb(29, 97, 136); overflow-y: auto;" />
+          <span class="input-group-btn"><button id="sendbtn" class="btn btn-primary" type="button">Send</button></span>
+          <span class="input-group-btn"><button id="translatebtn" class="btn btn-primary"
+              type="button">Translate</button></span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Idoma Chatbot. All rights reserved.</p>
+</footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
